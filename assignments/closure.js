@@ -1,6 +1,22 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
 
+function number(num) {
+  var num = num;
+  function isPrime() {
+    for(var i = 2; i < num; i++) {
+          if(num % i === 0) {
+            console.log("That ain't prime"); 
+            return false;
+          }
+      }
+      console.log("That is prime!");
+      return num > 1;
+  }
+  isPrime();
+}
+
+number(11);
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
